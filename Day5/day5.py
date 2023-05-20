@@ -48,6 +48,7 @@ elif num > 1:
     for i in range(2,num):
         if (num % i) ==0:
             print(num,"is not a prime number")
+            #In summary, the code checks if num is evenly divisible by i, meaning that the remainder of the division is zero. If the condition is true, the code block following the if statement is executed.
             print(i,"times",num//i, "is",num)
             break
     else:
@@ -61,3 +62,20 @@ else:
 
 
 
+#3. Write a Python program to add 'ing' at the end of a given string (length should be at least 3). If the given string already ends with 'ing', add 'ly' instead. If the string length of the given string is less than 3, leave it unchanged.
+# Sample String : 'abc'
+# Expected Result : 'abcing'
+# Sample String : 'string'
+# Expected Result : 'stringly'
+#
+s = str(input("enter a string"))
+def verbing(s):
+ if len(s) >= 3:
+     if s.endswith('ing'):
+         s += "ly"
+     else:
+         s += "ing"
+
+ return s 
+          
+ verbing()     

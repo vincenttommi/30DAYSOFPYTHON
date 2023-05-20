@@ -25,3 +25,19 @@ list2.sort()
 
 
 print("The seceond largest number in list2 is :", list2[-2])
+
+
+# ite a function in python that takes 3 parameters: name, age, and occupation and prints this sentence as output: "My name is {name}, I am {age} years old and I work as a {occupation}".
+
+
+
+def myfunction(name, age,occupation):
+    print(f"My name is  {name},I am {age} years old, and I worK as a {occupation}.")
+
+
+
+myfunction("vincent", 24, "software engineer")
+
+
+
+

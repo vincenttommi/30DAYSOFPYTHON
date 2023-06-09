@@ -26,4 +26,22 @@ def regex(string):
 if __name__ == '__main__':
     print(regex("programming in python rocks"))
  
+#Write a Python program to remove the parenthesis area in a string.
+#   pseudo code 
+"""
+
+import re 
+# variable that  holds the details
+#  loop that iterates over the list and print out the values
+
+
+
+"""
+
+import re
+items =   ["example (.com)", "w3resource", "github (.com)", "stackoverflow (.com)"]
+
+for item in items:
+    print(re.sub(r"?\([^]+\)","",item))
+    
     

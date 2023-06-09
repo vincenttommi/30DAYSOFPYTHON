@@ -175,7 +175,7 @@ Sample data : ["example (.com)", "w3resource", "github (.com)", "stackoverflow (
     example
     w3resource
     github
-    stackoverflow
+    stackoverflow 
 
 
 ### Day 11: Object-Oriented Python 

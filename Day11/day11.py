@@ -87,4 +87,85 @@ employee4.print_employee_details()
 employee5.print_employee_details()
 
 
+"""
+2. Write a Python class BankAccount with attributes like account_number, balance, date_of_opening and customer_name, and methods like deposit, withdraw, and check_balance.
+
+"""
+
+class BankAccount:
     
+    def  __init__(self,account_number,balance,date_of_opening,customer_name):
+        
+        
+     #creating instance of already defined class and assigning data to it
+     self.account_number  = account_number
+     self.balance  = balance
+     self.date_of_opening = date_of_opening
+     self.customer_name  = customer_name
+     
+     
+    #  method to deposit in bank account
+    
+    def deposit(self,amount):
+        self.balance += amount
+        print(f"$amount  has been deposited in your account.")
+      
+      
+    def widthdraw(self,amount):
+        if amount > self.balance:
+             print("insufficient balance.")
+        else:
+            self.balance  -= amount
+            print(f"${amount} has been withdrawn from your account.")
+            
+       # method to check balance 
+    def check_balance(self):
+        print(f"current balance is ${self.balance}.")
+    
+    #method that prints customer details
+    def print_customer_details(self):
+        print("Name:",self.customer_name)
+        print("Account Number:", self.account_number)
+        print("Date of opening:", self.date_of_opening)
+        print(f"Balance: ${self.balance}\n")
+        
+        
+        
+
+
+
+#input customer details  through instance of a class
+account1 = BankAccount(2245,50000, "01-01-2022","Vincenttommi")
+account2  = BankAccount(590089,60000,"03-04-2021","Daniel Karanja")
+account3  = BankAccount(6345,70000,"06-05-2022","calvin Arieri")
+account4  = BankAccount(7241,80000,"07-08-2018","Diana Nyagano")
+account5  = BankAccount(4567,50000,"05-08-2016","maxwell rono")
+account6 = BankAccount (6789,434000,"03-9-2014","Simon mwangi")
+
+                
+                   
+                
+ #printing details of the customer
+ 
+account1.print_customer_details()
+account2.print_customer_details()
+account3.print_customer_details()
+account4.print_customer_details()
+account5.print_customer_details()
+account6.print_customer_details()
+    
+    
+print("===================")
+account6.print_customer_details()
+
+
+#invoking arguments money via our methods
+account4.deposit(2000)
+account4.check_balance()
+
+account4.widthdraw(50000)
+account4.check_balance()    
+        
+    
+account4.widthdraw(40000)
+account4.check_balance()

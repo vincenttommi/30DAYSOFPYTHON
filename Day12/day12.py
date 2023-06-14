@@ -75,4 +75,59 @@ cat.speak()
 dog.speak()  
     
         
+
+
+
+"""
+
+
+ #Polymorphism : Create a class called Shape with an abstract method area(). Implement two subclasses, Circle and Rectangle, which inherit from the Shape class. Override the area() method in each subclass to calculate and return the area of a circle and rectangle respectively. Create instances of both subclasses and call their area() methods
+Polymorphism is a very important concept in programming. It refers to the use of a single type entity (method, operator or object) to represent different types in different scenarios.
+
+
+"""
+
+import math
+
+
+class Shape:
+    def area(self):
+        pass
+
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return math.pi * self.radius ** 2
+
+class Rectangle(Shape):
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+
+    def area(self):
+        return self.length * self.width
+
+# Creating instances of the subclasses
+c1 = Circle(50)
+rect = Rectangle(50, 40)
+
+# Calling the area() methods
+circle_area = c1.area()
+rectangle_area = rect.area()
+
+# Printing the results
+print("Area of the circle:", circle_area)
+print("Area of the rectangle:", rectangle_area)
+
+    
+ 
+      
             
+        
+        
+        
+    
+    
+    

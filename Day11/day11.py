@@ -169,3 +169,28 @@ account4.check_balance()
     
 account4.widthdraw(40000)
 account4.check_balance()
+
+# Write a Python class named Student with two instances student1, student2 and assign values to the instances' attributes. Print all the attributes of the student1, student2 instances with their values in the given format
+
+
+        
+class Student:
+    def __init__(self, name):
+        self.name = name
+
+    def print_student_details(self):
+        print("Student:", self.name)
+
+# Creating instances of the Student class
+s1 = Student('vincenttommi')
+s2 = Student('Daniel Karanja')
+
+# Printing out the details of the students
+s1.print_student_details()
+s2.print_student_details()
+ 
+
+    
+     
+        
+            

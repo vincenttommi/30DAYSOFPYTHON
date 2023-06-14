@@ -10,40 +10,69 @@
 
 # example of python iheritance
 
-class Animal:
-    #attribute and  method of the parent class
+# class Animal:
+#     #attribute and  method of the parent class
     
-    def eat(self):
-     print("I can eat")
+#     def eat(self):
+#      print("I can eat")
      
 
-    #inheriting fron Animal
+#     #inheriting fron Animal
     
-class Dog(Animal):
-    # new method in subclass
+# class Dog(Animal):
+#     # new method in subclass
     
-    def display(self):
-        # accessing name attribute of superclass using  self
-        print("My name is ",self.name)
+#     def display(self):
+#         # accessing name attribute of superclass using  self
+#         print("My name is ",self.name)
         
         
         
         
         
         
- #creating an object of  the subclass
-labrador = Dog()
+#  #creating an object of  the subclass
+# labrador = Dog()
 
 
-#acessing  superclass attribute  and method
-labrador.name = "Vincent"
-labrador.eat()
+# #acessing  superclass attribute  and method
+# labrador.name = "Vincent"
+# labrador.eat()
 
 
-#calling a subclass method
-labrador.display()
+# #calling a subclass method
+# labrador.display()
  
          
         
         
+class Animal:
+    
+    def speak(self):
+        print("The animal makes a sound.")
         
+        
+    # creating a subclass that inherits from Animal class
+class Dog(Animal):
+    def speak(self):
+        print("The Dog Barks")
+    
+ #overridding speak method in each class
+ 
+class Cat(Animal):
+    def speak(self):
+       print("The cat meows")
+        
+  
+#creating instances of the classes and assigning it to the methods
+dog = Dog()
+cat = Cat()
+
+  
+#calling the methods assigned to the classes
+
+cat.speak()
+dog.speak()  
+    
+        
+            

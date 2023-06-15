@@ -128,6 +128,58 @@ print("Area of the rectangle:", rectangle_area)
         
         
         
+"""
+
+
+
+3. Encapsulation: Create a class called BankAccount with private attributes account_number and balance. Implement public methods to access and modify these attributes. Use encapsulation to protect the data from direct access outside the class. Create an instance of the BankAccount class and demonstrate how to access and modify the account number and balance using the public methods.
+
+
+
+
+
+"""   
     
     
     
+    
+class BankAccount:
+    
+    def __init__(self, account_number, account_balance):
+        self.__account_number = account_number
+        self.__account_balance = account_balance
+        
+    # Method to get account number
+    def get_account_number(self):
+        return self.__account_number
+    
+    # Method to get account balance
+    def get_account_balance(self):
+        return self.__account_balance
+    
+    # Method to set account number
+    def set_account_number(self, new_account_number):
+        self.__account_number = new_account_number
+        
+    # Method to set account balance
+    def set_account_balance(self, new_balance):
+        self.__account_balance = new_balance
+        
+# Creating an instance of the BankAccount class
+account = BankAccount("00100878356", 200000.00)
+
+# Accessing the account number and balance using public methods
+print("Account Number:", account.get_account_number())
+print("Balance:", account.get_account_balance())
+
+# Modifying the account number and balance using public methods
+account.set_account_number("44588890")
+account.set_account_balance(50000)
+
+# Accessing the modified account number and balance
+print("Modified Account Number:", account.get_account_number())
+print("Modified Account Balance:", account.get_account_balance())
+
+               
+               
+               

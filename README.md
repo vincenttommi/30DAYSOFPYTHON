@@ -262,6 +262,7 @@ https://www.geeksforgeeks.org/python-exception-handling/
 https://pp4e-book.github.io/chapters/ch9_error_handling.html
 
 #### Exercises 
+
 Exercise 1: Handling a ZeroDivisionError
 Write a Python program that takes two numbers as input from the user.
 Implement exception handling to handle the scenario where the second number is zero (ZeroDivisionError).

@@ -57,7 +57,7 @@ for i in range(len(headlines)):
         summary = summaries[i].text.strip()
         print(f'Headline: {headline}')
         print(f'Summary: {summary}')
-        print('-' * 30)  # Add a separator for readability
+        print('-' * 30)  
 else:
     print(f'Failed to retrieve the page. Status code: {response.status_code}')
 

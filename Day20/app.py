@@ -51,6 +51,7 @@ session.commit()
 
 #retrieving data using sqlalchemy
 users =  session.query(User).all()
+print(users)
 
 #Retrieve a single user by id
 user = session.query(User).get(1)

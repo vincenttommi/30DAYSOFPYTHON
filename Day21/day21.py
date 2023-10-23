@@ -6,8 +6,8 @@ from  bs4 import   BeautifulSoup
 1. Write a Python program that uses web scraping to extract the title and price of a product from an online shopping website. Print the extracted informatio
 """
 
-url  =  'https://www.example.com/product-page'
 
+url  =  'https://www.example.com/product-page'
 
 #sending an Http request to URL
 response  =  requests.get(url)

@@ -375,7 +375,7 @@ Learn advanced techniques in web scraping, such as handling pagination, handling
 
 2. Write a Python program that scrapes the names, prices, and ratings of all products in a specific category on an e-commerce website, handling dynamic content using Selenium. Print the extracted information.
 
-3. Write a Python program that scrapes the names, prices, and ratings of all products in a specific category on an e-commerce website, using proxies and rotating user agents to bypass IP blocking. Print the extracted information.
+3. Write a Python program that scrapes the names, prices,    and ratings of all products in a specific category on an e-commerce website, using proxies and rotating user agents to bypass IP blocking. Print the extracted information.
 
 
 ### Day 23: Data Structures in Python

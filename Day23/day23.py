@@ -1,3 +1,7 @@
+# Implement a stack data structure in Python using a list. 
+# Include push, pop, and peek operations.
+
+
 
 """
 

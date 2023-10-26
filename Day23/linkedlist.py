@@ -1,28 +1,87 @@
-# Implement a linked list data structure in Python. 
-# Include methods to insert a node, delete a node, and print the linked list
-
-
-
 """
+linked list - are data structures that stores data inform of a chain
+node - an element in each linked-list
 
-Basic Linked list Operations
+prons of linked list
+1 You can add and remove elements quilcky
+2 Linked list  don't require  a fixed size or initial size due to chainlike structure
 
-1 Traversal - access each element of the linked list
-2 Insertion - add a new element to the linked list
-3 Deletion - removes existing elements
-4 search - find a node  in the linked list
-5 sort - sorts the nodes of the linked list
+# cons
+# 1 occuppies more memory compared to  an array.
+# 2 search operations on a linked list are very slow
+
+# """
+
+#examples of a linked list
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+class LinkedList:
+    def  __init(...)
+    def append(...)
+    def __init__(self, head=None):
+        self.head = head
+
+    def append(self, new_node):
+        if self.head is None:
+            self.head = new_node
+        else:
+            current = self.head
+            while current.next is not None:
+                current = current.next
+            current.next = new_node
+
+            self.head = new_node
+        
+        
+        
+        
+# #invoking values as arguments to a LinkedList
+# e1 = Node(1)
+# e2 = Node(2)
+ 
+        
+        
+        
+# ll = LinkedList(e1)  
 
 
-Three things to remember in Linked list
-head - points to the first node of the linked list
-next - points of the last node , if it is null we have reached to end of the linked list
+class LinkedList:
+    def __init(self):
+        self.head = None
 
+    def append(self, value):
+        new_node = Node(value)
+        if not self.head:
+            self.head = new_node
+        else:
+            current = self.head
+            while current.next:
+                current = current.next
+            current.next = new_node
 
+    def delete(self, value):
+        current = self.head
+        prev = None
 
-"""
+        if current is not None and current.value == value:
+            self.head = current.next
+            return
 
+        while current is not None:
+            if current.value == value:
+                break
+            prev = current
+            current = current.next
 
-#Traverse a linked list
-#Displayimg contents of a linked list
+        if current is None:
+            return
 
+        prev.next = current.next
+
+                
+              
+              
+        

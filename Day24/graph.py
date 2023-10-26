@@ -12,10 +12,10 @@ https://www.tutorialspoint.com/python_data_structure/python_graph_algorithms.htm
 #example of  Depth First Traversal
 
 class graph:
-   def __init__(self,gdict=None):
-      if gdict is None:
-         gdict = {}
-      self.gdict = gdict
+   def __init__(self,dict=None):
+      if dict is None:
+         dict = {}
+      self.dict = dict
 # Check for the visisted and unvisited nodes
 def dfs(graph, start, visited = None):
    if visited is None:
@@ -26,13 +26,13 @@ def dfs(graph, start, visited = None):
       dfs(graph, next, visited)
    return visited
 
-gdict = { 
+dict = { 
    "a" : set(["b","c"]),
    "b" : set(["a", "d"]),
    "c" : set(["a", "d"]),
    "d" : set(["e"]),
    "e" : set(["a"])
 }
-dfs(gdict, 'a')
+dfs(dict, 'a')
             
             
